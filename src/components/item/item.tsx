@@ -58,7 +58,12 @@ const Item = ({ todo, onSave, onUpdate, onDelete, onToggle }: ItemProps) => {
   const renderItem = () => (
     <>
       <Checkbox checked={todo.completed} onChange={handleOnToggle}></Checkbox>
-      <div className={todo.completed ? 'todo-item completed-item' : 'todo-item'} onDoubleClick={() => setEditing(true)}>{todo.text}</div>
+      <div 
+        className={todo.completed ? 'todo-item completed-item' : 'todo-item'} 
+        onDoubleClick={() => setEditing(true)}
+      >
+        {todo.text}
+      </div>
       <Button type="default" onClick={() => onDelete(todo.id)}>Delete</Button>
     </>
   );
