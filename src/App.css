@@ -1,0 +1,57 @@
+.App {
+  max-width: 730px;
+  margin: '0 24px 24px 24px';
+  margin-left: auto;
+  margin-right: auto;
+  h3 {
+    text-align: center;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  button {
+    margin-left: 8px;
+  }
+}
+
+.footer {
+  text-align: left;
+}
+
+.todo-item {
+  width: 100%;
+  margin-left: 8px;
+  &.completed-item {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+}
+
+.task-name-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  input {
+    width: 500px;
+    margin-right: 8px;
+  }
+
+  .task-name-error {
+    color: red
+  }
+}
+
+.alert-banner {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
