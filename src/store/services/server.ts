@@ -8,7 +8,6 @@ import {
 } from "../actions/actions";
 import { Dispatch } from "redux";
 import { Task } from "../todoTypes";
-import { message } from "antd";
 
 // const { REACT_APP_URL } = process.env;
 const REACT_APP_URL = 'http://localhost:8080' || '';
